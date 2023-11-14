@@ -6,7 +6,7 @@ namespace TrackSpawner.Core
     public class TrackSpawner : MonoBehaviour
     {
         public GameObject trackTilePrefab;
-        public GameObject obstaclePrefab;
+        public List<GameObject> obstaclePrefabs; // List of obstacle prefabs
         public int numberOfTiles = 1000;
         public int minObstacleSize, maxObstacleSize;
 
@@ -15,7 +15,7 @@ namespace TrackSpawner.Core
 
         private List<GameObject> tiles = new List<GameObject>();
         private float tileWidth = 1f;
-        private float distanceBetweenTracks = 3f;
+        private float distanceBetweenTracks = 6f;
         private int numberOfTracks = 3;
 
         private Dictionary<int, int> trackObstacleCount = new Dictionary<int, int>();
@@ -28,12 +28,16 @@ namespace TrackSpawner.Core
 
         private void SpawnTracks()
         {
+            // Calculate the offset to center the middle track
+            float offset = (numberOfTracks - 1) * distanceBetweenTracks / 2f;
+
             for (int i = 0; i < numberOfTracks; i++)
             {
                 for (int j = 0; j < numberOfTiles; j++)
                 {
+                    // Offset the position so that the middle track is centered
                     var instance = Instantiate(trackTilePrefab,
-                        new Vector3(i * distanceBetweenTracks, 0, j * tileWidth), Quaternion.identity);
+                        new Vector3(i * distanceBetweenTracks - offset, 0, j * tileWidth - distanceBetweenTracks), Quaternion.identity);
                     instance.transform.parent = transform;
                     tiles.Add(instance);
                 }
@@ -73,13 +77,15 @@ namespace TrackSpawner.Core
                     // Calculate obstacle size based on the tile size and scale
                     float obstacleSize = tileWidth * randomScale;
 
+                    // Randomly choose an obstacle prefab from the list
+                    GameObject selectedObstaclePrefab = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Count)];
+
                     // Check for collisions before spawning the obstacle
                     if (!ObstacleOverlap(tiles[tileIndex].transform.position, obstacleSize))
                     {
-                        // Spawn obstacle on the track tile with the random scale
-                        var obstacle = Instantiate(obstaclePrefab, tiles[tileIndex].transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity,
+                        // Spawn obstacle on the track tile with the random scale and selected obstacle prefab
+                        var obstacle = Instantiate(selectedObstaclePrefab, tiles[tileIndex].transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity,
                             tiles[tileIndex].transform);
-                        obstacle.transform.localScale = new Vector3(1, 1, randomScale);
 
                         // Add the track with an obstacle to the list
                         tracksWithObstacles.Add(trackWithObstacle);
