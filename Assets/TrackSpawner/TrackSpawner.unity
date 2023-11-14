@@ -301,53 +301,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &2099280806
-GameObject:
+--- !u!1001 &6611801080229892249
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2099280808}
-  - component: {fileID: 2099280807}
-  m_Layer: 0
-  m_Name: TrackSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2099280807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099280806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f45bb5e15f1f13e49a42948b8997ecf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackTilePrefab: {fileID: 6640344304699083111, guid: 37237903346a088409f49a3d52499e4c, type: 3}
-  obstaclePrefab: {fileID: 667147715532152198, guid: deef09229fee9304e84d43732b1c8dcc, type: 3}
-  numberOfTiles: 1000
-  minObstacleSize: 4
-  maxObstacleSize: 10
-  obstacleSpawnProbability: 2
---- !u!4 &2099280808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2099280806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2923404, y: 2.473761, z: -2.242576}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2923404
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.473761
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.242576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922097, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611801080445922111, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
+      propertyPath: m_Name
+      value: TrackSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: afccd53dba2b2ff43b6f9678b0243695, type: 3}
