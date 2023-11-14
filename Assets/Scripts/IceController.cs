@@ -170,7 +170,8 @@ public class IceController : MonoBehaviour
             //Wir haben ein defektes Signal detektiert. Das kostet ja mal olli dolli Verspätung, Junge.
             //Anschlusszug kannsch voll kniggn
             Debug.Log($"AUTSCHI BAUTSCHI");
-            OnVerspaedungKassiert?.Invoke(1);
+            animator.SetTrigger("explode");
+            OnVerspaedungKassiert?.Invoke(10);
         }
     }
 }
