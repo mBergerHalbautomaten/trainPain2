@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TrackSpawner
+namespace TrackSpawner.Core
 {
     public class TrackSpawner : MonoBehaviour
     {
