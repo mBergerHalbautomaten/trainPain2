@@ -14,6 +14,11 @@ public class VerspaetungsKontrolleur : MonoBehaviour
         IceController.OnVerspaedungKassiert += IceControllerOnOnVerspaedungKassiert;
     }
 
+    private void OnDestroy()
+    {
+        IceController.OnVerspaedungKassiert -= IceControllerOnOnVerspaedungKassiert;
+    }
+    
     private void IceControllerOnOnVerspaedungKassiert(int verspaedunginsegunda)
     {
         totalDelay += verspaedunginsegunda;

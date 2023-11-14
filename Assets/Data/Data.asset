@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c30241b3a94c843b96ea60ad526722, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  entschuldigungen:
+  - Im Wagen 7 funktionieren keine Reservierungen, die Steckdosen gehen auch nicht
+    und es ist dunkel. Der Schaden ist gemeldet. ICh gehe davon aus, dass das Problem
+    in einigen Monaten behoben ist.
+  - "Wir werden jetzt ein paar Kohlen mehr auflegen und versuchen, einen flotten
+    Walzer zu fahren, damit wir Frankfurt p\xFCnktlich erreichen"
+  - "WIr k\xF6nnen Ihnen zur Zeit kein gastronomisches Angebot bieten, da unser Service-Personal
+    nicht gekommen ist."
+  - "Der Lokf\xFChrer k\xE4mpft gerade noch mit der Technik im Triebkopf. Wenn er
+    den Kampf gewinnt, sage ich Ihnen Bescheid. Und dann auch, wie viel Versp\xE4tung
+    wir haben."
+  - "Unser Lokf\xFChrer wollte die Versp\xE4tung aufholen. Leider war er dabei ein
+    bisschen zu schnell und wir wurden geblitzt, weswegen wir jetzt stehen. Es geht
+    gleich weiter"
+  - "Wir haben eine Hose gefunden. Bitte pr\xFCfen Sie, ob Sie noch eine anhaben.
+    Falls nicht, oder falls sie sonst eine vermissen, melden Sie sich bitte beim
+    Zugpersonal"
+  - "Wir entschuldigen uns f\xFCr die Unannehmlichkeiten. Die guten Vors\xE4tze f\xFCr
+    die Deutsche Bahn greifen wohl erst ab dem 3.1."
+  - "Die Abfahrt verz\xF6gert sich um wenige Minuten aufgrund der Dame, die im ersten
+    Wagen die T\xFCr versperrt. Die Dame hilft ihnen dann auch bei den Anschlussz\xFCgen
+    weiter"
+  - "Gehen Sie bitte aus der T\xFCr! Wenn SIe individuelle Reisezeiten haben m\xF6chten,
+    m\xFCssen Sie ein Auto benutzen!"
+  - "Liebe Fahrg\xE4ste, willkommen im super-entschleunignten ICE nach Leipzig mit
+    einer Versp\xE4tung von 30 Minuten"
+  - "Auch f\xFCr den jungen Herrn gilt: Die Lichtschranke ist kein Gl\xFChweinstand.
+    Bitte weitergehen!"
+  - "Ich begr\xFC\xDF0e Sie im \xFCberf\xFCllten Regionalexpress nach Stralsund.
+    Ich k\xF6nnte Ihnen eine angenehme Fahrt w\xFCnschen, aber seien wir mal ehrlich.
+    Das ist es hier f\xFCr niemanden."
+  - "Der Grund f\xFCr die Versp\xE4tung ist eine mit Mopsgeschwindigkeit fahrende
+    S-Bahn, die nicht aus dem Knick kommt."
+  - "Wenn Sie Fragen haben, sprechen Sie uns an. Fragen Sie aber nicht warum wir
+    schon wieder Versp\xE4tung haben! Wir kennen die Antwort nicht"
+  - Entschuldigen Sie die unangenehme Bremsung. Der Fahrdkienstleiter wollte uns
+    zeigen, welche SIgnale er im Angebot hat. Wir musten von 160 auf 80 abbrfemsen
+  - "Wir konnten soeben unsere 50-min\xFCtige Versp\xE4tung auf 45 Minuten verk\xFCrzen.
+    So ungef\xE4hr muss sich die brasilianische Nationalmannschaft beim 1:7 gegen
+    Deutschland gef\xFChlt haben"
+  - "Liebe G\xE4ste, der Wagen 9 fehlt heute unentschuldigt"
