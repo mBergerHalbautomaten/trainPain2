@@ -165,10 +165,12 @@ public class IceController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("BLÖB"))
+        if (other.CompareTag("Respawn"))
         {
             //Wir haben ein defektes Signal detektiert. Das kostet ja mal olli dolli Verspätung, Junge.
             //Anschlusszug kannsch voll kniggn
+            Debug.Log($"AUTSCHI BAUTSCHI");
+            OnVerspaedungKassiert?.Invoke(1);
         }
     }
 }
