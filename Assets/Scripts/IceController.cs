@@ -7,11 +7,14 @@ using UnityEngine.UIElements;
 
 public class IceController : MonoBehaviour
 {
+    public delegate void VerspaedungsEventHaendler(int verspaedungInSegunda);
+    public static event VerspaedungsEventHaendler OnVerspaedungKassiert;
+    
     private bool isMoving = false;
     [FormerlySerializedAs("speedModifier")] [SerializeField]
     private float speed = 1;
 
-    private float jumpDistance = 3;
+    private float jumpDistance = 5;
     private Animator animator;
     private TrainTrackPosition trackPosition;
 
@@ -138,7 +141,7 @@ public class IceController : MonoBehaviour
     private IEnumerator MoveRoutine(float targetX)
     {
         isMoving = true;
-        if(animator) animator.SetTrigger("Jump");
+        if(animator) animator.SetTrigger("jump");
         Vector3 startPosition = transform.position;
         float t = 0;
         while (t < 1)
@@ -146,18 +149,26 @@ public class IceController : MonoBehaviour
             float y = 0;
             if (t <= 0.5f)
             {
-                y = Mathf.Lerp(0.5f, 1.5f, t * 2);
+                y = Mathf.Lerp(0.5f, 2f, t * 2);
             }
             else
             {
-                y = Mathf.Lerp(0.5f, 1.5f, (t - 0.5f) * 2);
+                y = Mathf.Lerp(2f, 0.5f, (t - 0.5f) * 2);
             }
-            t += Time.fixedDeltaTime;
+            t += Time.fixedDeltaTime / 0.5f;
             float newXPosition = Mathf.Lerp(startPosition.x, targetX, t);
             transform.position = new Vector3(newXPosition, y, transform.position.z);
             yield return null;
         }
-
         isMoving = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("BLÖB"))
+        {
+            //Wir haben ein defektes Signal detektiert. Das kostet ja mal olli dolli Verspätung, Junge.
+            //Anschlusszug kannsch voll kniggn
+        }
     }
 }
