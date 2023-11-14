@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackTilePrefab: {fileID: 6640344304699083111, guid: 37237903346a088409f49a3d52499e4c, type: 3}
-  obstaclePrefab: {fileID: 667147715532152198, guid: deef09229fee9304e84d43732b1c8dcc, type: 3}
+  obstaclePrefabs:
+  - {fileID: 8602412440549746217, guid: cb216baf156c43c4e9a222353871786a, type: 3}
+  - {fileID: 9117446942960499840, guid: 88e651bebc42d474b86dbb63ec9d7429, type: 3}
   numberOfTiles: 1000
   minObstacleSize: 4
   maxObstacleSize: 10
