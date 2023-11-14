@@ -171,7 +171,7 @@ public class IceController : MonoBehaviour
             //Anschlusszug kannsch voll kniggn
             Debug.Log($"AUTSCHI BAUTSCHI");
             animator.SetTrigger("explode");
-            OnVerspaedungKassiert?.Invoke(1);
+            OnVerspaedungKassiert?.Invoke(10);
         }
     }
 }
